@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ecosi/main.dart';
 import 'package:flutter/material.dart';
 
 class splashScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _splashScreenState extends State<splashScreen> {
     Timer(const Duration(seconds: 8), () {
       Navigator.of(context)
       // TODO: if you need a load another screen change this
-          .pushReplacement(MaterialPageRoute(builder: (_) => const HomePage()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => const ecosi()));
     });
   }
 
