@@ -88,7 +88,7 @@ class _splashScreenState extends State<splashScreen> {
                         blurRadius: 10,
                       ),
                       BoxShadow(
-                        color: Colors.blue,
+                        color: Colors.orange,
                         offset: Offset(1, 10),
                         blurRadius: 20,
                       )]
@@ -98,7 +98,50 @@ class _splashScreenState extends State<splashScreen> {
                 ),
               ],
             ),
+            const SizedBox(height: 50,),
             /// Use containers for define button...
+            InkWell(
+              child: Container(
+                width: 400,
+                height: 70,
+                decoration: const BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(20),
+                    bottomRight: Radius.circular(20),
+                    topRight: Radius.circular(20),
+                    topLeft: Radius.circular(20),
+                  ),
+                  boxShadow: [BoxShadow(
+                    color: Colors.black,
+                    offset: Offset(4, 5),
+                    blurRadius: 4,
+                  )]
+                ),
+                child: Row(
+                  children: const [
+                    SizedBox(width: 180,),
+                    Text(
+                      "Login",
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white,
+                          shadows: [BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10,
+                          ),
+                            BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(1, 10),
+                              blurRadius: 20,
+                            )]
+                      ),
+                    ),
+                  ],
+                )
+              ),
+            ),
           ],
         ),
       ),
