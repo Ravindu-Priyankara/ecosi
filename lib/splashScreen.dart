@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ecosi/dashboard.dart';
 import 'package:ecosi/main.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -17,10 +18,10 @@ class _splashScreenState extends State<splashScreen> {
     // TODO: implement initState
     super.initState();
     ///set time for showing splash screen
-    Timer(const Duration(seconds: 8), () {
-      //Navigator.of(context)
+    Timer(const Duration(seconds: 5), () {
+      Navigator.of(context)
       // TODO: if you need a load another screen change this
-          //.pushReplacement(MaterialPageRoute(builder: (_) => const ecosi()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => const homePage()));
     });
   }
 
