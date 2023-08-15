@@ -1,4 +1,8 @@
 
+import 'package:ecosi/hndbg.dart';
+import 'package:ecosi/navBar.dart';
+import 'package:ecosi/pizza.dart';
+import 'package:ecosi/shoes.dart';
 import 'package:ecosi/splashScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +17,7 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      //drawer: const splashScreen(),
+      drawer: const navBar(),
       appBar: AppBar(
         backgroundColor: Colors.orange,
         elevation: 10,
@@ -55,7 +59,7 @@ class _homePageState extends State<homePage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              const SizedBox(height: 10,),
               const Text("Welcome Back",
                 style:TextStyle(
                   color: Colors.white,
@@ -75,7 +79,7 @@ class _homePageState extends State<homePage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 50,),
+              const SizedBox(height: 40,),
             ],
           ),
         ),
@@ -178,6 +182,11 @@ class _homePageState extends State<homePage> {
                       //fit: BoxFit.fill,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const pizza()));
+                  },
                 ),
                 const SizedBox(width: 40,),
                 InkWell(
@@ -203,6 +212,11 @@ class _homePageState extends State<homePage> {
                       //fit: BoxFit.fill,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const shoes()));
+                  },
                 ),
                 const SizedBox(width: 40,),
                 InkWell(
@@ -228,6 +242,11 @@ class _homePageState extends State<homePage> {
                       //fit: BoxFit.fill,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const handBags()));
+                  },
                 ),
                 const SizedBox(width: 40,),
                 InkWell(
@@ -253,6 +272,11 @@ class _homePageState extends State<homePage> {
                       //fit: BoxFit.fill,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const pizza()));
+                  },
                 ),
                 const SizedBox(width: 40,),
                 InkWell(
@@ -278,6 +302,11 @@ class _homePageState extends State<homePage> {
                       //fit: BoxFit.fill,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const shoes()));
+                  },
                 ),
                 const SizedBox(width: 40,),
                 InkWell(
@@ -303,6 +332,11 @@ class _homePageState extends State<homePage> {
                       //fit: BoxFit.fill,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const handBags()));
+                  },
                 ),
               ],
             ),
@@ -378,6 +412,11 @@ class _homePageState extends State<homePage> {
                       ],
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const pizza()));
+                  },
                 ),
                 const SizedBox(height: 25,),
                 InkWell(
@@ -418,11 +457,11 @@ class _homePageState extends State<homePage> {
                               child: const CircleAvatar(
                                 backgroundColor: Colors.black45,
                                 radius: 65,
-                                foregroundImage: AssetImage("assets/pizza.jpg"),
+                                foregroundImage: AssetImage("assets/nike.jpeg"),
                               ),
                             ),
                             const SizedBox(width: 10,),
-                            const Text("Thanduri chicken pizza",
+                            const Text("Nike shoes",
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
@@ -444,6 +483,11 @@ class _homePageState extends State<homePage> {
                       ],
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const shoes()));
+                  },
                 ),
                 const SizedBox(height: 25,),
                 InkWell(
@@ -484,11 +528,11 @@ class _homePageState extends State<homePage> {
                               child: const CircleAvatar(
                                 backgroundColor: Colors.black45,
                                 radius: 65,
-                                foregroundImage: AssetImage("assets/pizza.jpg"),
+                                foregroundImage: AssetImage("assets/hndbg.jpg"),
                               ),
                             ),
                             const SizedBox(width: 10,),
-                            const Text("Thanduri chicken pizza",
+                            const Text("Guess Hand Bags",
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
@@ -510,6 +554,11 @@ class _homePageState extends State<homePage> {
                       ],
                     ),
                   ),
+                  onTap: (){
+                    Navigator.of(context)
+                    // TODO: if you need a load another screen change this
+                        .pushReplacement(MaterialPageRoute(builder: (_) => const handBags()));
+                  },
                 ),
               ],
             ),

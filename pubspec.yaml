@@ -65,6 +65,10 @@ flutter:
     - assets/pizza.jpg
     - assets/shoes.png
     - assets/bag.jpg
+    - assets/nike.jpeg
+    - assets/hndbg.jpg
+    - assets/user.jpg
+    - assets/back.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
